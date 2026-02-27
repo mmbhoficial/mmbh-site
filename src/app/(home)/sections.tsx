@@ -29,10 +29,20 @@ export function Hero() {
     <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-linear-to-br from-zinc-900 via-zinc-900 to-emerald-950 pt-30 pb-12">
       {/* Background com overlay sofisticado */}
       <div className="absolute inset-0 z-0">
+        {/* Desktop banner */}
         <Image
-          src="/images/banner.png"
+          src="/images/banner-frase-2026.png"
           fill
-          className="object-cover object-[center_20%]"
+          className="hidden object-cover object-[center_30%] md:block"
+          alt="Marcha da Maconha BH na Praça da Estação"
+          priority
+          sizes="100vw"
+        />
+        {/* Mobile banner */}
+        <Image
+          src="/images/banner-mobile.png"
+          fill
+          className="object-cover object-center md:hidden"
           alt="Marcha da Maconha BH na Praça da Estação"
           priority
           sizes="100vw"
@@ -77,7 +87,7 @@ export function Hero() {
           <Sparkles className="h-4 w-4 text-emerald-400" />
         </motion.div>
 
-        <motion.h1
+        {/* <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -89,18 +99,10 @@ export function Hero() {
           <span className="block bg-linear-to-r from-emerald-400 via-green-400 to-amber-300 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(16,185,129,0.4)]">
             É SÓ UMA PLANTA.
           </span>
-        </motion.h1>
+        </motion.h1> */}
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.15 }}
-          className="mb-6 font-display text-3xl tracking-wide text-amber-400 md:text-5xl"
-        >
-          23 de Maio
-        </motion.p>
 
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -108,7 +110,7 @@ export function Hero() {
         >
           Contra o racismo estrutural e o encarceramento em massa. Pela
           regulamentação democrática e o direito ao autocultivo.
-        </motion.p>
+        </motion.p> */}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
