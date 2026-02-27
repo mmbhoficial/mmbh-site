@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { ProgressBar } from "@/components/ui/progress-bar";
 import type { Metadata } from "next";
-import { Comfortaa, Inter } from "next/font/google";
+import { Comfortaa, Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
 // Font para títulos e destaques
@@ -22,10 +22,19 @@ const inter = Inter({
   preload: true,
 });
 
+// Font display condensada para títulos impactantes (estilo poster)
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  variable: "--font-bebas",
+  weight: "400",
+  display: "swap",
+  preload: true,
+});
+
 export const metadata: Metadata = {
-  title: "Marcha da Maconha BH | Pela liberdade e justiça social",
+  title: "Marcha da Maconha BH | Nem crime nem doença, é só uma planta",
   description:
-    "Site oficial da Marcha da Maconha de Belo Horizonte. Luta antiproibicionista, acolhimento jurídico/médico e informações sobre a regulamentação da cannabis.",
+    "Site oficial da Marcha da Maconha de Belo Horizonte. Pela descriminalização, regulamentação e o fim da guerra às drogas. Informação, acolhimento e luta por direitos.",
   keywords: [
     "Marcha da Maconha",
     "BH",
@@ -57,10 +66,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://marchadamaconhabh.org",
-    title: "Marcha da Maconha BH | Pela liberdade e justiça social",
+    url: "https://marchadamaconhabh.com.br",
+    title: "Marcha da Maconha BH | Nem crime nem doença, é só uma planta",
     description:
-      "Desde 2008, lutando pela liberdade, justiça social e direitos humanos em Minas Gerais. Apoio jurídico, acolhimento médico e educação antiproibicionista.",
+      "Pela descriminalização, regulamentação e o fim da guerra às drogas. Desde 2008 lutando por informação, acolhimento e direitos em Minas Gerais.",
     siteName: "Marcha da Maconha BH",
     images: [
       {
@@ -73,9 +82,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marcha da Maconha BH | Pela liberdade e justiça social",
+    title: "Marcha da Maconha BH | Nem crime nem doença, é só uma planta",
     description:
-      "Site oficial da Marcha da Maconha de Belo Horizonte. Luta antiproibicionista desde 2008.",
+      "Pela descriminalização, regulamentação e o fim da guerra às drogas. Informação, acolhimento e luta por direitos desde 2008.",
     images: ["/images/twitter-image.jpg"],
     creator: "@marchadamaconhabh",
   },
@@ -133,7 +142,7 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=no" />
       </head>
       <body
-        className={`${comfortaa.variable} ${inter.variable} bg-background text-foreground selection:text-foreground font-sans antialiased selection:bg-emerald-500/30`}
+        className={`${comfortaa.variable} ${inter.variable} ${bebasNeue.variable} bg-background text-foreground selection:text-foreground font-sans antialiased selection:bg-emerald-500/30`}
       >
         {/* Progress Bar como componente client separado */}
         <ProgressBar />

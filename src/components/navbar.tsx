@@ -80,8 +80,8 @@ export function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden items-center gap-1 md:flex">
+          {/* Desktop Navigation - Oculto */}
+          {/* <div className="hidden items-center gap-1 md:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -97,10 +97,10 @@ export function Navbar() {
                 <div className="absolute inset-0 rounded-lg bg-emerald-500/0 opacity-0 transition-all group-hover:bg-emerald-500/10 group-hover:opacity-100" />
               </Link>
             ))}
-          </div>
+          </div> */}
 
           {/* Desktop CTA Buttons */}
-          <div className="hidden items-center gap-3 md:flex">
+          {/* <div className="hidden items-center gap-3 md:flex">
             <Button
               asChild
               variant="ghost"
@@ -132,7 +132,7 @@ export function Navbar() {
                 Participar
               </Link>
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile Toggle Button */}
           <button

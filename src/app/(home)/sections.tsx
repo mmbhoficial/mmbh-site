@@ -9,6 +9,7 @@ import {
   Gavel,
   Globe,
   HeartHandshake,
+  Instagram,
   Leaf,
   Scale,
   Shield,
@@ -29,14 +30,14 @@ export function Hero() {
       {/* Background com overlay sofisticado */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/6.jpg"
+          src="/images/banner.png"
           fill
-          className="object-cover object-center"
+          className="object-cover object-[center_20%]"
           alt="Marcha da Maconha BH na Praça da Estação"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-zinc-900 via-zinc-900/70 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-zinc-900 via-zinc-900/20 to-transparent" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(120,179,65,0.15)_0%,transparent_70%)]" />
       </div>
 
@@ -80,16 +81,24 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mb-6 text-4xl leading-[1.1] font-black tracking-tight md:text-8xl"
+          className="mb-2 font-display text-4xl leading-[0.95] tracking-wider md:text-7xl"
         >
-          <span className="bg-linear-to-r from-white via-emerald-100 to-emerald-300 bg-clip-text text-transparent">
-            Plantando para
+          <span className="block text-white drop-shadow-[0_2px_10px_rgba(255,255,255,0.3)]">
+            NEM CRIME NEM DOENÇA,
           </span>
-          <br />
-          <span className="bg-linear-to-r from-emerald-400 via-green-400 to-amber-300 bg-clip-text text-transparent">
-            Reparar Vidas.
+          <span className="block bg-linear-to-r from-emerald-400 via-green-400 to-amber-300 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(16,185,129,0.4)]">
+            É SÓ UMA PLANTA.
           </span>
         </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.15 }}
+          className="mb-6 font-display text-3xl tracking-wide text-amber-400 md:text-5xl"
+        >
+          23 de Maio
+        </motion.p>
 
         <motion.p
           initial={{ opacity: 0 }}
@@ -110,9 +119,12 @@ export function Hero() {
           <Button
             asChild
             size="lg"
-            className="group relative h-auto overflow-hidden rounded-full bg-linear-to-r from-emerald-600 to-green-600 px-12 py-6 text-sm font-bold tracking-widest uppercase shadow-2xl shadow-emerald-600/30 transition-all hover:scale-105 hover:shadow-emerald-600/50"
+            className="group relative h-auto overflow-hidden rounded-full bg-linear-to-r from-emerald-600 to-green-600 px-10 py-5 text-sm font-bold tracking-widest uppercase shadow-2xl shadow-emerald-600/30 transition-all hover:scale-105 hover:shadow-emerald-600/50"
           >
-            <Link href="#acolhimento">
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLScgXrcp9De-vbgagN1FxKvlUZe3HbQZv8EnWual2sfrcCC3kg/viewform?usp=sharing"
+              target="_blank"
+            >
               <span className="relative z-10 flex items-center">
                 Preciso de Apoio
                 <ArrowUpRight className="ml-3 size-5 transition-transform duration-300 group-hover:translate-x-1.5 group-hover:rotate-45" />
@@ -123,15 +135,15 @@ export function Hero() {
           <Button
             asChild
             variant="outline"
-            className="group relative h-auto overflow-hidden rounded-full border-white/20 bg-white/5 px-12 py-6 text-sm font-bold tracking-widest text-white uppercase backdrop-blur-sm transition-all hover:bg-white/10 hover:shadow-lg"
+            className="group relative h-auto overflow-hidden rounded-full border-white/20 bg-white/5 px-10 py-5 text-sm font-bold tracking-widest text-white uppercase backdrop-blur-sm transition-all hover:bg-white/10 hover:shadow-lg"
           >
             <Link
-              href="https://instagram.com/marchadamaconhabh"
+              href="https://www.instagram.com/marchadamaconhabh/"
               target="_blank"
             >
               <span className="relative z-10 flex items-center">
-                Preciso de Apoio
-                <ChevronRight className="ml-3 size-5 transition-transform duration-300 group-hover:translate-x-2" />
+                Siga no Instagram
+                <Instagram className="ml-3 size-5 transition-transform duration-300 group-hover:scale-110" />
               </span>
             </Link>
           </Button>
@@ -163,7 +175,7 @@ export function SobreNos() {
           className="relative aspect-square overflow-hidden rounded-[2rem] shadow-2xl"
         >
           <Image
-            src="/images/3.jpg"
+            src="/images/marcha-noite.jpg"
             fill
             className="object-cover object-center"
             alt="Militantes da Marcha BH"
@@ -171,11 +183,10 @@ export function SobreNos() {
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
           <div className="absolute bottom-8 left-8">
-            <div className="rounded-2xl bg-linear-to-r from-emerald-600/90 to-green-600/90 p-6 backdrop-blur-sm">
-              <div className="flex items-end gap-3">
-                <p className="text-4xl font-black text-white italic">BH</p>
-                <div className="mb-1 h-px flex-1 bg-white/30" />
-                <p className="text-xs font-bold tracking-tighter text-white/80 uppercase">
+            <div className="rounded-2xl bg-linear-to-r from-emerald-600/90 to-green-600/90 p-3 backdrop-blur-sm">
+              <div className="flex flex-col">
+                <p className="text-4xl font-black text-white italic">MMBH</p>
+                <p className="text-xs font-bold tracking-tighter text-white/80 uppercase text-right">
                   Desde 2008
                 </p>
               </div>
@@ -273,7 +284,7 @@ export function CartaPrincipios() {
           asChild
           className="group relative h-auto overflow-hidden rounded-full bg-linear-to-r from-emerald-600 to-green-600 px-12 py-7 text-sm font-bold tracking-widest uppercase shadow-2xl shadow-emerald-600/30 transition-all hover:scale-105 hover:shadow-emerald-600/50"
         >
-          <Link href="/documentos/carta-de-principios-mmbh.pdf" target="_blank">
+          <Link href="/carta-de-principios.pdf" target="_blank">
             <span className="relative z-10 flex items-center">
               Baixar Manifesto Completo
               <ArrowUpRight className="ml-3 size-5 transition-transform duration-300 group-hover:translate-x-1.5 group-hover:rotate-45" />
@@ -353,7 +364,7 @@ export function Acolhimento() {
                 asChild
                 className="group h-auto rounded-full bg-linear-to-r from-emerald-600 to-green-600 px-10 py-6 text-sm font-bold tracking-widest uppercase shadow-xl transition-all hover:scale-105"
               >
-                <Link href="https://docs.google.com/forms/e/1FAIpQLScgXrcp9De-vbgagN1FxKvlUZe3HbQZv8EnWual2sfrcCC3kg">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScgXrcp9De-vbgagN1FxKvlUZe3HbQZv8EnWual2sfrcCC3kg/viewform">
                   <span className="flex items-center">
                     Solicitar Apoio Agora
                     <ArrowUpRight className="ml-3 size-5 transition-transform duration-300 group-hover:translate-x-1.5 group-hover:rotate-45" />
@@ -530,14 +541,14 @@ export function AcoesRapidas() {
     {
       title: "Jurídico Popular",
       desc: "Integre nossa rede de apoio aos perseguidos pela guerra às drogas.",
-      link: "#",
+      link: "https://docs.google.com/forms/d/1R4lbFTpLb0erUYakmFHGSbud9Qc0IeQuBkHshZtTALs/viewform?chromeless=1&edit_requested=true",
       icon: <Scale className="h-6 w-6" />,
       color: "from-emerald-500 to-green-500",
     },
     {
       title: "Redução de Danos",
       desc: "Atue na distribuição de insumos e educação sobre uso seguro.",
-      link: "#",
+      link: "https://docs.google.com/forms/d/1R4lbFTpLb0erUYakmFHGSbud9Qc0IeQuBkHshZtTALs/viewform?chromeless=1&edit_requested=true",
       icon: <Target className="h-6 w-6" />,
       color: "from-emerald-500 to-green-500",
     },
