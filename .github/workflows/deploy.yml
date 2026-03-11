@@ -13,8 +13,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      artifact-path: ${{ steps.build.outputs.artifact-path }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,16 +26,18 @@ jobs:
         run: npm ci
 
       - name: Build project
-        id: build
-        run: |
-          npm run build
-          echo "artifact-path=.next" >> $GITHUB_OUTPUT
+        run: npm run build
 
-      - name: Upload artifact
+      - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact
-          path: .next
+          path: |
+            .next
+            public
+            package.json
+            package-lock.json
+            node_modules
           retention-days: 1
 
   deploy-development:
@@ -52,18 +52,18 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
-          path: .next
 
-      - name: Deploy to development
+      - name: Deploy to development via SSH
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-avz --delete"
-          SOURCE: "./"
           REMOTE_HOST: ${{ secrets.HOSTINGER_HOST }}
           REMOTE_USER: ${{ secrets.HOSTINGER_USERNAME }}
+          REMOTE_PORT: 65002
+          SOURCE: "./"
           TARGET: "/home/${{ secrets.HOSTINGER_USERNAME }}/public_html/dev.marchadamaconhabh.com.br"
-          EXCLUDE: ".git, node_modules, .github, .env.local, .gitignore, README.md"
+          ARGS: "-avzr --delete"
+          EXCLUDE: ".git, .github, .env.local, .gitignore, README.md"
 
   deploy-staging:
     needs: build
@@ -77,18 +77,18 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
-          path: .next
 
-      - name: Deploy to staging
+      - name: Deploy to staging via SSH
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-avz --delete"
-          SOURCE: "./"
           REMOTE_HOST: ${{ secrets.HOSTINGER_HOST }}
           REMOTE_USER: ${{ secrets.HOSTINGER_USERNAME }}
+          REMOTE_PORT: 65002
+          SOURCE: "./"
           TARGET: "/home/${{ secrets.HOSTINGER_USERNAME }}/public_html/stage.marchadamaconhabh.com.br"
-          EXCLUDE: ".git, node_modules, .github, .env.local, .gitignore, README.md"
+          ARGS: "-avzr --delete"
+          EXCLUDE: ".git, .github, .env.local, .gitignore, README.md"
 
   deploy-production:
     needs: build
@@ -102,15 +102,15 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
-          path: .next
 
-      - name: Deploy to production
+      - name: Deploy to production via SSH
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-avz --delete"
-          SOURCE: "./"
           REMOTE_HOST: ${{ secrets.HOSTINGER_HOST }}
           REMOTE_USER: ${{ secrets.HOSTINGER_USERNAME }}
+          REMOTE_PORT: 65002
+          SOURCE: "./"
           TARGET: "/home/${{ secrets.HOSTINGER_USERNAME }}/public_html/marchadamaconhabh.com.br"
-          EXCLUDE: ".git, node_modules, .github, .env.local, .gitignore, README.md"
+          ARGS: "-avzr --delete"
+          EXCLUDE: ".git, .github, .env.local, .gitignore, README.md"
