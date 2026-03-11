@@ -179,6 +179,14 @@ export function Footer() {
             >
               Mazzaroth.dev
             </Link>
+            <Link
+              href="https://www.instagram.com/pejota_bh/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-zinc-400 transition-colors hover:text-emerald-600 dark:text-zinc-400"
+            >
+              Pejota.dev
+            </Link>
           </p>
         </div>
 
