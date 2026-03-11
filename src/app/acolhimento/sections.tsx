@@ -114,9 +114,7 @@ export function HeroAcolhimento() {
           transition={{ delay: 0.2 }}
           className="mx-auto mb-10 max-w-2xl px-10 text-base leading-relaxed font-light text-zinc-300 md:text-xl"
         >
-          Se você sofreu violência policial, enfrenta processos por cultivo ou
-          busca tratamento com cannabis, nossa rede de acolhimento oferece
-          suporte ético, humanizado e antiproibicionista.
+          Se você busca tratamento com maconha medicinal, enfrenta dúvidas sobre cultivo, processos judiciais ou precisa de orientação para ter acesso seguro ao tratamento, nossa rede de acolhimento oferece apoio jurídico, psicológico, médico e conexão com associações parceiras, garantindo suporte ético  e humanizado.
         </motion.p>
 
         <motion.div
@@ -902,7 +900,7 @@ export function PerguntasFrequentes() {
               Falar no WhatsApp
             </a>
             <a
-              href="mailto:acolhimento@marchadamaconhabh.org"
+              href="mailto:acolhimento@marchadamaconhabh.com.br"
               className="rounded-xl border border-emerald-200 bg-white px-8 py-4 text-sm font-bold text-emerald-700 hover:bg-emerald-50 dark:border-emerald-800 dark:bg-zinc-800 dark:text-emerald-300"
             >
               Enviar Email

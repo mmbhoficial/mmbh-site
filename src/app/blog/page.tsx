@@ -90,7 +90,7 @@ export default function BlogListPage() {
                 <span className="relative z-10">Chamar no Direct</span>
               </a>
               <a
-                href="mailto:comunicacao@marchadamaconhabh.org"
+                href="mailto:comunicacao@marchadamaconhabh.com.br"
                 className="rounded-full border-2 border-emerald-200 bg-white/80 px-10 py-4 text-sm font-bold tracking-widest text-emerald-700 uppercase backdrop-blur-sm transition-all hover:bg-emerald-50 dark:border-emerald-800 dark:bg-zinc-800/80 dark:text-emerald-300 dark:hover:bg-zinc-800"
               >
                 Enviar Email
