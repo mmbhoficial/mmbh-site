@@ -430,7 +430,7 @@ export default function TermosCondicoesPage() {
                     <p className="font-medium text-emerald-800 dark:text-emerald-300">
                       Para questões sobre estes termos, entre em contato através
                       do nosso formulário de acolhimento ou pelo e-mail:{" "}
-                      <strong>termos@marchadamaconhabh.org</strong>
+                      <strong>termos@marchadamaconhabh.com.br</strong>
                     </p>
                   </div>
                 </div>

@@ -356,9 +356,7 @@ export function Acolhimento() {
             </h2>
 
             <p className="mb-10 text-lg leading-relaxed text-zinc-400">
-              Se você sofreu violência policial, enfrenta processos por cultivo
-              ou busca tratamento médico canábico, nossa rede de acolhimento
-              oferece suporte ético, antiproibicionista e humanizado.
+            Se você busca tratamento com maconha medicinal, enfrenta dúvidas sobre cultivo, processos judiciais ou precisa de orientação para ter acesso seguro ao tratamento, nossa rede de acolhimento oferece apoio jurídico, psicológico, médico e conexão com associações parceiras, garantindo suporte ético  e humanizado.
             </p>
 
             <div className="flex flex-wrap items-center gap-6">

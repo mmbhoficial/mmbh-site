@@ -32,6 +32,7 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://marchadamaconhabh.com.br"),
   title: "Marcha da Maconha BH | Nem crime nem doença, é só uma planta",
   description:
     "Site oficial da Marcha da Maconha de Belo Horizonte. Pela descriminalização, regulamentação e o fim da guerra às drogas. Informação, acolhimento e luta por direitos.",
@@ -89,7 +90,7 @@ export const metadata: Metadata = {
     creator: "@marchadamaconhabh",
   },
   alternates: {
-    canonical: "https://marchadamaconhabh.org",
+    canonical: "https://marchadamaconhabh.com.br",
   },
   verification: {
     google: "inserir-codigo-verificacao-google",

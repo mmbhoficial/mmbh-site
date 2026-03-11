@@ -295,7 +295,7 @@ export default function PoliticaPrivacidadePage() {
                       Para exercer seus direitos, entre em contato através do
                       nosso formulário de acolhimento ou pelo e-mail:
                       <strong className="ml-2">
-                        privacidade@marchadamaconhabh.org
+                        privacidade@marchadamaconhabh.com.br
                       </strong>
                     </p>
                   </div>
@@ -382,7 +382,7 @@ export default function PoliticaPrivacidadePage() {
                         </strong>
                       </p>
                       <p className="text-emerald-700 dark:text-emerald-400">
-                        📧 privacidade@marchadamaconhabh.org
+                        📧 privacidade@marchadamaconhabh.com.br
                       </p>
                       <p className="text-emerald-700 dark:text-emerald-400">
                         📍 Belo Horizonte - Minas Gerais
