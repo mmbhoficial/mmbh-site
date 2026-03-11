@@ -28,16 +28,20 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Create deployment package
+        run: |
+          mkdir -p deploy-package
+          cp -r .next deploy-package/
+          cp -r public deploy-package/
+          cp package.json deploy-package/
+          cp package-lock.json deploy-package/
+          cp -r node_modules deploy-package/
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact
-          path: |
-            .next
-            public
-            package.json
-            package-lock.json
-            node_modules
+          path: deploy-package
           retention-days: 1
 
   deploy-development:
@@ -46,12 +50,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: development
     steps:
-      - uses: actions/checkout@v4
-
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
+          path: deploy-package
 
       - name: Deploy to development via SSH
         uses: easingthemes/ssh-deploy@main
@@ -60,10 +63,10 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOSTINGER_HOST }}
           REMOTE_USER: ${{ secrets.HOSTINGER_USERNAME }}
           REMOTE_PORT: 65002
-          SOURCE: "./"
-          TARGET: "/home/${{ secrets.HOSTINGER_USERNAME }}/public_html/dev.marchadamaconhabh.com.br"
+          SOURCE: "deploy-package/"
+          TARGET: "/home/${{ secrets.HOSTINGER_USERNAME }}/domains/dev.marchadamaconhabh.com.br/nodejs"
           ARGS: "-avzr --delete"
-          EXCLUDE: ".git, .github, .env.local, .gitignore, README.md"
+          EXCLUDE: ".git, .github"
 
   deploy-staging:
     needs: build
@@ -71,12 +74,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: staging
     steps:
-      - uses: actions/checkout@v4
-
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
+          path: deploy-package
 
       - name: Deploy to staging via SSH
         uses: easingthemes/ssh-deploy@main
@@ -85,10 +87,10 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOSTINGER_HOST }}
           REMOTE_USER: ${{ secrets.HOSTINGER_USERNAME }}
           REMOTE_PORT: 65002
-          SOURCE: "./"
-          TARGET: "/home/${{ secrets.HOSTINGER_USERNAME }}/public_html/stage.marchadamaconhabh.com.br"
+          SOURCE: "deploy-package/"
+          TARGET: "/home/${{ secrets.HOSTINGER_USERNAME }}/domains/stage.marchadamaconhabh.com.br/nodejs"
           ARGS: "-avzr --delete"
-          EXCLUDE: ".git, .github, .env.local, .gitignore, README.md"
+          EXCLUDE: ".git, .github"
 
   deploy-production:
     needs: build
@@ -96,12 +98,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - uses: actions/checkout@v4
-
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
+          path: deploy-package
 
       - name: Deploy to production via SSH
         uses: easingthemes/ssh-deploy@main
@@ -110,7 +111,18 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOSTINGER_HOST }}
           REMOTE_USER: ${{ secrets.HOSTINGER_USERNAME }}
           REMOTE_PORT: 65002
-          SOURCE: "./"
-          TARGET: "/home/${{ secrets.HOSTINGER_USERNAME }}/public_html/marchadamaconhabh.com.br"
+          SOURCE: "deploy-package/"
+          TARGET: "/home/${{ secrets.HOSTINGER_USERNAME }}/domains/marchadamaconhabh.com.br/nodejs"
           ARGS: "-avzr --delete"
-          EXCLUDE: ".git, .github, .env.local, .gitignore, README.md"
+          EXCLUDE: ".git, .github"
+
+      - name: Restart Node.js application
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USERNAME }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 65002
+          script: |
+            cd /home/${{ secrets.HOSTINGER_USERNAME }}/domains/marchadamaconhabh.com.br/nodejs
+            touch tmp/restart.txt
