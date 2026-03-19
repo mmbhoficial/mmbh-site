@@ -154,91 +154,7 @@ export default function Home() {
           className="container mx-auto px-4 pt-12"
         >
           <SobreNos />
-        </motion.section>
-
-        {/* Participe - com background diferenciado */}
-        {/* <motion.section
-          id="participe"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.1 }}
-          className="relative"
-        >
-          <div className="absolute inset-0" />
-          <div className="relative container mx-auto px-4">
-
-            <AcoesRapidas />
-          </div>
-        </motion.section> */}
-
-        {/* Princípios */}
-        <motion.section
-          id="principios"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.2 }}
-          className="container mx-auto px-4"
-        >
-          <CartaPrincipios />
-        </motion.section>
-
-        {/* Acolhimento */}
-        <motion.section
-          id="acolhimento"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.3 }}
-          className="container mx-auto px-4"
-        >
-          <Acolhimento />
-        </motion.section>
-
-        {/* Documentos */}
-        <motion.section
-          id="documentos"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.4 }}
-          className="container mx-auto px-4"
-        >
-          <Documentos />
-        </motion.section>
-
-        {/* Ações Rápidas */}
-        <motion.section
-          id="participe"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.5 }}
-          className="container mx-auto px-4"
-        >
-          <AcoesRapidas />
-        </motion.section>
-
-        {/* Blog */}
-        <motion.section
-          id="blog"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.5 }}
-          className="container mx-auto px-4"
-        >
-          <BlogSection />
-        </motion.section>
-
-        {/* Loja */}
-        {/* <motion.section
-          id="loja"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.6 }}
-          className="container mx-auto px-4"
-        >
-          <Loja />
-        </motion.section> */}
-
-        {/* Social */}
-        <motion.section
-          id="social"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.7 }}
-          className="container mx-auto px-4"
-        >
-          <InstagramSection />
-        </motion.section>
+        </motion.section>        
       </div>
 
       {/* Call to Action final */}
@@ -281,7 +197,6 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
-
       <Footer />
     </main>
   );
