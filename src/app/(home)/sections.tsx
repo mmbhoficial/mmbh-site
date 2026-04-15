@@ -44,6 +44,9 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-linear-to-t from-zinc-900 via-zinc-900/20 to-transparent" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(120,179,65,0.15)_0%,transparent_70%)]" />
+        <p className="pointer-events-none absolute right-4 bottom-4 z-10 rounded-md bg-black/45 px-2 py-1 text-[11px] font-medium text-white/90 backdrop-blur-sm">
+          Foto: Maxuel Vilela
+        </p>
       </div>
 
       {/* Partículas decorativas */}
@@ -179,6 +182,9 @@ export function SobreNos() {
             sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
+          <p className="pointer-events-none absolute right-4 bottom-4 rounded-md bg-black/45 px-2 py-1 text-[11px] font-medium text-white/90 backdrop-blur-sm">
+            Foto: Maxuel Vilela
+          </p>
           <div className="absolute bottom-8 left-8">
             <div className="rounded-2xl bg-linear-to-r from-emerald-600/90 to-green-600/90 p-3 backdrop-blur-sm">
               <div className="flex flex-col">
