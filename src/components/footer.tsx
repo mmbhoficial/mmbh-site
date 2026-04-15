@@ -31,7 +31,7 @@ export function Footer() {
               />
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-zinc-400">
-              Pela regulamentação da cannabis com foco em justiça social,
+              Pela regulamentação da maconha com foco em justiça social,
               redução de danos e direitos humanos.
             </p>
             <div className="flex gap-4">
@@ -53,7 +53,7 @@ export function Footer() {
           </div>
 
           {/* Links Rápidos */}
-          <div>
+          {/* <div>
             <h4 className="mb-6 flex items-center gap-2 text-sm font-bold tracking-wider text-emerald-400 uppercase">
               <Users size={16} /> Acesso Rápido
             </h4>
@@ -78,7 +78,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Links Externos */}
           <div>
@@ -169,17 +169,6 @@ export function Footer() {
               Termos e Condições
             </Link>
           </div>
-          <p className="w-1/3 text-end">
-            Desenvolvido em apoio por:{" "}
-            <Link
-              href="https://www.instagram.com/maateusfelipe/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-zinc-400 transition-colors hover:text-emerald-600 dark:text-zinc-400"
-            >
-              Mazzaroth.dev
-            </Link>
-          </p>
         </div>
 
         {/* Nota Final */}

@@ -16,7 +16,7 @@ export const blogData: Post[] = [
     excerpt:
       "Entenda como a guerra às drogas impacta desproporcionalmente as periferias da capital mineira e por que a regulamentação é uma questão de direitos humanos.",
     content:
-      "A proibição da cannabis no Brasil nunca foi sobre a planta, mas sim sobre o controle de corpos e territórios. Em Belo Horizonte, os dados de segurança pública revelam um padrão de seletividade penal que atinge prioritariamente a juventude negra e periférica. Discutir a regulamentação é, antes de tudo, discutir uma reparação histórica e a implementação de políticas públicas que priorizem a vida em vez do encarceramento em massa. Nossa luta busca transformar o cenário atual através de educação e incidência política direta.",
+      "A proibição da maconha no Brasil nunca foi sobre a planta, mas sim sobre o controle de corpos e territórios. Em Belo Horizonte, os dados de segurança pública revelam um padrão de seletividade penal que atinge prioritariamente a juventude negra e periférica. Discutir a regulamentação é, antes de tudo, discutir uma reparação histórica e a implementação de políticas públicas que priorizem a vida em vez do encarceramento em massa. Nossa luta busca transformar o cenário atual através de educação e incidência política direta.",
     date: "12 Jan, 2026",
     author: "Coletivo MMBH",
     category: "Ativismo",
@@ -28,7 +28,7 @@ export const blogData: Post[] = [
     excerpt:
       "Aprenda os passos fundamentais para buscar segurança jurídica no seu tratamento e garantir o direito constitucional à saúde através do auto-cultivo.",
     content:
-      "O avanço das decisões judiciais favoráveis ao cultivo doméstico para fins terapêuticos tem sido uma vitória constante para os pacientes mineiros. O processo envolve a obtenção de um laudo médico detalhado, a prescrição da cannabis e a comprovação da necessidade do tratamento contínuo. Nossa rede de apoio jurídico destaca que o Habeas Corpus preventivo é a ferramenta mais segura para evitar intervenções policiais indevidas. É fundamental que o paciente mantenha um registro rigoroso do seu cultivo e siga as orientações de especialistas para garantir a proteção plena perante a lei.",
+      "O avanço das decisões judiciais favoráveis ao cultivo doméstico para fins terapêuticos tem sido uma vitória constante para os pacientes mineiros. O processo envolve a obtenção de um laudo médico detalhado, a prescrição da maconha e a comprovação da necessidade do tratamento contínuo. Nossa rede de apoio jurídico destaca que o Habeas Corpus preventivo é a ferramenta mais segura para evitar intervenções policiais indevidas. É fundamental que o paciente mantenha um registro rigoroso do seu cultivo e siga as orientações de especialistas para garantir a proteção plena perante a lei.",
     date: "10 Jan, 2026",
     author: "Depto. Jurídico MMBH",
     category: "Jurídico",
@@ -36,7 +36,7 @@ export const blogData: Post[] = [
   },
   {
     id: 3,
-    title: "Cannabis na Psiquiatria: Redução de Danos e Saúde Mental",
+    title: "Maconha na Psiquiatria: Redução de Danos e Saúde Mental",
     excerpt:
       "Como o uso terapêutico de canabinoides tem auxiliado no tratamento de ansiedade e depressão sob uma perspectiva de cuidado ético e científico.",
     content:
@@ -64,7 +64,7 @@ export const blogData: Post[] = [
     excerpt:
       "Dicas fundamentais sobre pureza, métodos de consumo e hidratação para quem opta pelo uso adulto da planta de forma responsável.",
     content:
-      "Informação é a melhor ferramenta de saúde. A estratégia de Redução de Danos (RD) reconhece que o consumo de substâncias faz parte da sociedade e busca minimizar riscos em vez de apenas punir. Para quem faz uso da cannabis, isso inclui o uso de filtros e piteiras longas para resfriar a fumaça, a escolha de vaporizadores de ervas secas para proteger os pulmões e a atenção especial à procedência do material. Estar bem hidratado e em um ambiente seguro também são pilares para uma experiência positiva. Nossa cartilha de acolhimento reforça que o autocuidado é um ato político contra o estigma do 'usuário problemático'.",
+      "Informação é a melhor ferramenta de saúde. A estratégia de Redução de Danos (RD) reconhece que o consumo de substâncias faz parte da sociedade e busca minimizar riscos em vez de apenas punir. Para quem faz uso da maconha, isso inclui o uso de filtros e piteiras longas para resfriar a fumaça, a escolha de vaporizadores de ervas secas para proteger os pulmões e a atenção especial à procedência do material. Estar bem hidratado e em um ambiente seguro também são pilares para uma experiência positiva. Nossa cartilha de acolhimento reforça que o autocuidado é um ato político contra o estigma do 'usuário problemático'.",
     date: "02 Jan, 2026",
     author: "Núcleo de RD",
     category: "Redução de Danos",
@@ -72,11 +72,11 @@ export const blogData: Post[] = [
   },
   {
     id: 6,
-    title: "Cannabis e a Luta Antimanicomial em Minas Gerais",
+    title: "Maconha e a Luta Antimanicomial em Minas Gerais",
     excerpt:
       "O papel da regulamentação na reforma psiquiátrica e o fim do modelo de comunidades terapêuticas isoladas.",
     content:
-      "Minas Gerais tem uma tradição histórica de luta antimanicomial, e a cannabis está inserida nesse contexto como uma alternativa ao isolamento forçado. Muitas comunidades terapêuticas hoje funcionam como novos manicômios, muitas vezes substituindo o cuidado científico por doutrinas religiosas e privação de liberdade. Defendemos que o cuidado em saúde mental deve ser feito em liberdade, com base territorial e utilizando todas as ferramentas terapêuticas disponíveis, inclusive a cannabis. A regulamentação enfraquece o modelo punitivista e fortalece o cuidado humanizado em redes de atenção psicossocial abertas e democráticas.",
+      "Minas Gerais tem uma tradição histórica de luta antimanicomial, e a maconha está inserida nesse contexto como uma alternativa ao isolamento forçado. Muitas comunidades terapêuticas hoje funcionam como novos manicômios, muitas vezes substituindo o cuidado científico por doutrinas religiosas e privação de liberdade. Defendemos que o cuidado em saúde mental deve ser feito em liberdade, com base territorial e utilizando todas as ferramentas terapêuticas disponíveis, inclusive a maconha. A regulamentação enfraquece o modelo punitivista e fortalece o cuidado humanizado em redes de atenção psicossocial abertas e democráticas.",
     date: "28 Dez, 2025",
     author: "Fórum de Saúde Mental",
     category: "Social",
@@ -88,7 +88,7 @@ export const blogData: Post[] = [
     excerpt:
       "Técnicas de cultivo orgânico e sustentável para a produção doméstica na realidade urbana mineira.",
     content:
-      "O cultivo urbano de cannabis não é apenas uma questão de acesso, mas também de sustentabilidade. Em Belo Horizonte, adaptamos técnicas de permacultura para pequenos espaços, utilizando iluminação LED eficiente, sistemas de irrigação por gotejamento e controle biológico de pragas. Este guia prático ensina como transformar varandas, quintais e até paredes em pequenas hortas medicinais, sempre respeitando os ciclos naturais da planta e priorizando métodos orgânicos. O cultivo próprio é um ato de autonomia e resistência, que conecta o usuário com o processo terapêutico desde a semente até o consumo final.",
+      "O cultivo urbano de maconha não é apenas uma questão de acesso, mas também de sustentabilidade. Em Belo Horizonte, adaptamos técnicas de permacultura para pequenos espaços, utilizando iluminação LED eficiente, sistemas de irrigação por gotejamento e controle biológico de pragas. Este guia prático ensina como transformar varandas, quintais e até paredes em pequenas hortas medicinais, sempre respeitando os ciclos naturais da planta e priorizando métodos orgânicos. O cultivo próprio é um ato de autonomia e resistência, que conecta o usuário com o processo terapêutico desde a semente até o consumo final.",
     date: "15 Jan, 2026",
     author: "Coletivo Cultivo BH",
     category: "Cultivo",
@@ -100,7 +100,7 @@ export const blogData: Post[] = [
     excerpt:
       "Como a regulamentação pode gerar empregos e oportunidades econômicas para comunidades historicamente marginalizadas.",
     content:
-      "A regulamentação da cannabis representa não apenas uma mudança social, mas também uma revolução econômica. Em Minas Gerais, estima-se que um mercado legal possa gerar mais de 10 mil empregos diretos em cultivo, processamento, pesquisa e varejo. Nossa proposta defende que ao menos 30% das licenças sejam destinadas a cooperativas de produtores familiares, comunidades tradicionais e empreendedores das periferias. Este modelo inclusivo busca reparar os danos da guerra às drogas através da criação de riqueza e trabalho digno, com foco na economia solidária e no desenvolvimento local sustentável.",
+      "A regulamentação da maconha representa não apenas uma mudança social, mas também uma revolução econômica. Em Minas Gerais, estima-se que um mercado legal possa gerar mais de 10 mil empregos diretos em cultivo, processamento, pesquisa e varejo. Nossa proposta defende que ao menos 30% das licenças sejam destinadas a cooperativas de produtores familiares, comunidades tradicionais e empreendedores das periferias. Este modelo inclusivo busca reparar os danos da guerra às drogas através da criação de riqueza e trabalho digno, com foco na economia solidária e no desenvolvimento local sustentável.",
     date: "18 Jan, 2026",
     author: "Coletivo Econômico MMBH",
     category: "Economia",
@@ -108,11 +108,11 @@ export const blogData: Post[] = [
   },
   {
     id: 9,
-    title: "Cannabis e Arte: Expressão Cultural e Política",
+    title: "Maconha e Arte: Expressão Cultural e Política",
     excerpt:
-      "A relação histórica entre a cannabis e as expressões artísticas brasileiras, do samba ao hip-hop mineiro.",
+      "A relação histórica entre a maconha e as expressões artísticas brasileiras, do samba ao hip-hop mineiro.",
     content:
-      "A cannabis sempre esteve presente na cultura brasileira, influenciando ritmos, letras e movimentos artísticos. Em Belo Horizonte, a planta aparece como tema e inspiração em diversas manifestações culturais, desde as rodas de samba até o hip-hop das periferias. Este texto explora como a proibição também é uma censura cultural e como a regulamentação pode fortalecer a cena artística local. A arte, assim como a cannabis, é uma forma de resistência e expressão da identidade de um povo, e ambas merecem ser celebradas e protegidas pelo Estado.",
+      "A maconha sempre esteve presente na cultura brasileira, influenciando ritmos, letras e movimentos artísticos. Em Belo Horizonte, a planta aparece como tema e inspiração em diversas manifestações culturais, desde as rodas de samba até o hip-hop das periferias. Este texto explora como a proibição também é uma censura cultural e como a regulamentação pode fortalecer a cena artística local. A arte, assim como a maconha, é uma forma de resistência e expressão da identidade de um povo, e ambas merecem ser celebradas e protegidas pelo Estado.",
     date: "20 Jan, 2026",
     author: "Coletivo Cultural MMBH",
     category: "Cultura",
@@ -134,7 +134,7 @@ export const blogData: Post[] = [
     id: 11,
     title: "Pesquisa Científica e Inovação em Minas Gerais",
     excerpt:
-      "Os avanços da pesquisa com cannabis nas universidades mineiras e as oportunidades para o desenvolvimento científico.",
+      "Os avanços da pesquisa com maconha nas universidades mineiras e as oportunidades para o desenvolvimento científico.",
     content:
       "Minas Gerais tem se destacado como um polo de pesquisa canábica no Brasil, com universidades como a UFMG, UFV e UFJF desenvolvendo estudos pioneiros em farmacologia, agronomia e medicina. Este artigo mapeia as principais linhas de pesquisa em andamento no estado, desde o desenvolvimento de cultivares adaptados ao nosso clima até estudos clínicos com pacientes reumáticos e oncológicos. A regulamentação é fundamental para que a ciência mineira possa competir em igualdade com centros internacionais e gerar soluções terapêuticas acessíveis para a população brasileira.",
     date: "25 Jan, 2026",

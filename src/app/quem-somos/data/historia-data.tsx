@@ -88,7 +88,7 @@ export const valoresData = [
   {
     title: "Educação Popular",
     description:
-      "Produção e compartilhamento de conhecimento acessível sobre cannabis e direitos.",
+      "Produção e compartilhamento de conhecimento acessível sobre maconha e direitos.",
     icon: "📚",
     color: "bg-emerald-100 dark:bg-emerald-900/30",
     textColor: "text-emerald-700 dark:text-emerald-300",
@@ -107,7 +107,7 @@ export const coletivoData = [
   {
     name: "GT Jurídico",
     description:
-      "Atendimento jurídico especializado em casos de cannabis. Elaboração de HCs e defesa criminal.",
+      "Atendimento jurídico especializado em casos de maconha. Elaboração de HCs e defesa criminal.",
     members: "Advogados/as e estudantes",
     icon: "⚖️",
     color: "from-emerald-500 to-green-500",
@@ -115,7 +115,7 @@ export const coletivoData = [
   {
     name: "GT Saúde",
     description:
-      "Rede de profissionais de saúde informados sobre cannabis medicinal. Acolhimento humanizado.",
+      "Rede de profissionais de saúde informados sobre maconha medicinal. Acolhimento humanizado.",
     members: "Médicos, psicólogos, enfermeiros",
     icon: "❤️",
     color: "from-emerald-500 to-green-500",

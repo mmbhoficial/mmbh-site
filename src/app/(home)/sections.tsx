@@ -6,16 +6,11 @@ import {
   ArrowUpRight,
   ChevronRight,
   FileText,
-  Gavel,
   Globe,
-  HeartHandshake,
   Instagram,
   Leaf,
   Scale,
-  Shield,
-  ShieldCheck,
   Sparkles,
-  Stethoscope,
   Target,
   Users,
 } from "lucide-react";
@@ -241,7 +236,7 @@ export function SobreNos() {
               <div>
                 <h4 className="mb-2 text-lg font-bold">Acesso Universal</h4>
                 <p className="text-zinc-600 dark:text-zinc-400">
-                  Pelo acesso gratuito à cannabis medicinal via SUS para todas
+                  Pelo acesso gratuito à maconha medicinal via SUS para todas
                   as pessoas.
                 </p>
               </div>
@@ -298,131 +293,6 @@ export function CartaPrincipios() {
       {/* Elemento decorativo */}
       <div className="pointer-events-none absolute -right-10 -bottom-15 text-[30rem] font-black text-white/5 italic select-none">
         MM
-      </div>
-    </div>
-  );
-}
-
-// --- ACOLHIMENTO ---
-export function Acolhimento() {
-  const servicos = [
-    {
-      icon: <Gavel className="h-6 w-6" />,
-      title: "Jurídico",
-      desc: "Suporte para HC de cultivo e defesa criminal especializada.",
-      color: "from-emerald-500 to-green-500",
-    },
-    {
-      icon: <Stethoscope className="h-6 w-6" />,
-      title: "Saúde",
-      desc: "Rede de médicos e prescritores acolhedores e informados.",
-      color: "from-emerald-500 to-green-500",
-    },
-    {
-      icon: <Users className="h-6 w-6" />,
-      title: "Psicologia",
-      desc: "Atendimento focado em redução de danos e cuidado integral.",
-      color: "from-emerald-500 to-green-500",
-    },
-  ];
-
-  return (
-    <div id="acolhimento" className="py-24">
-      <div className="grid items-stretch gap-8 lg:grid-cols-12">
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="relative overflow-hidden rounded-[2rem] bg-linear-to-br from-zinc-900 to-zinc-950 p-8 md:p-12 lg:col-span-7"
-        >
-          <div className="absolute top-0 right-0 h-32 w-32 translate-x-16 -translate-y-16 rounded-full bg-emerald-500/10 blur-3xl" />
-
-          <HeartHandshake className="absolute right-8 bottom-8 h-32 w-32 text-emerald-500/10" />
-
-          <div className="relative z-10">
-            <div className="mb-6 flex items-center gap-3">
-              <Shield className="h-5 w-5 text-emerald-400" />
-              <span className="text-sm font-bold tracking-wider text-emerald-400 uppercase">
-                Rede de Apoio
-              </span>
-            </div>
-
-            <h2 className="mb-6 text-4xl leading-tight font-black text-white md:text-5xl">
-              Você não está
-              <br />
-              <span className="bg-linear-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent">
-                sozinho.
-              </span>
-            </h2>
-
-            <p className="mb-10 text-lg leading-relaxed text-zinc-400">
-              Se você sofreu violência policial, enfrenta processos por cultivo
-              ou busca tratamento médico canábico, nossa rede de acolhimento
-              oferece suporte ético, antiproibicionista e humanizado.
-            </p>
-
-            <div className="flex flex-wrap items-center gap-6">
-              <Button
-                asChild
-                className="group h-auto rounded-full bg-linear-to-r from-emerald-600 to-green-600 px-10 py-6 text-sm font-bold tracking-widest uppercase shadow-xl transition-all hover:scale-105"
-              >
-                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScgXrcp9De-vbgagN1FxKvlUZe3HbQZv8EnWual2sfrcCC3kg/viewform">
-                  <span className="flex items-center">
-                    Solicitar Apoio Agora
-                    <ArrowUpRight className="ml-3 size-5 transition-transform duration-300 group-hover:translate-x-1.5 group-hover:rotate-45" />
-                  </span>
-                </Link>
-              </Button>
-
-              <div className="flex items-center gap-3">
-                <ShieldCheck className="h-5 w-5 text-emerald-500" />
-                <span className="text-xs font-bold tracking-wider text-zinc-500 uppercase">
-                  Sigilo Absoluto • LGPD • Ético
-                </span>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-        <div className="grid gap-6 lg:col-span-5">
-          {servicos.map((servico, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-[1.5rem] bg-white p-8 shadow-xl transition-all hover:shadow-2xl dark:bg-zinc-800"
-            >
-              <div
-                className={`absolute inset-0 bg-linear-to-br ${servico.color} opacity-0 transition-opacity group-hover:opacity-10`}
-              />
-
-              <div className="relative z-10">
-                <div
-                  className={`mb-6 inline-flex rounded-2xl bg-linear-to-br text-white ${servico.color} p-4 shadow-lg`}
-                >
-                  {servico.icon}
-                </div>
-
-                <h3 className="mb-3 text-xl font-bold text-zinc-900 dark:text-white">
-                  {servico.title}
-                </h3>
-
-                <p className="text-zinc-600 dark:text-zinc-400">
-                  {servico.desc}
-                </p>
-
-                <div className="mt-6 flex items-center gap-2">
-                  <span className="text-xs font-bold tracking-wider text-zinc-500 uppercase">
-                    Saiba mais
-                  </span>
-                  <ChevronRight className="h-4 w-4 text-zinc-500 transition-transform group-hover:translate-x-1" />
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </div>
   );

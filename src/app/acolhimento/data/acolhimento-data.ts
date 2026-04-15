@@ -4,9 +4,9 @@ export const servicosData = [
     id: "juridico",
     titulo: "Apoio Jurídico",
     descricao:
-      "Defesa especializada em casos de cannabis. Habeas corpus preventivo, defesa criminal e acompanhamento processual.",
+      "Defesa especializada em casos de maconha. Habeas corpus preventivo, defesa criminal e acompanhamento processual.",
     descricaoLonga:
-      "Oferecemos suporte jurídico especializado para pessoas criminalizadas por cultivo, porte ou uso de cannabis. Nossa rede de advogados trabalha com estratégias de defesa que consideram a perspectiva antiproibicionista e os direitos humanos.",
+      "Oferecemos suporte jurídico especializado para pessoas criminalizadas por cultivo, porte ou uso de maconha. Nossa rede de advogados trabalha com estratégias de defesa que consideram a perspectiva antiproibicionista e os direitos humanos.",
     icon: "⚖️",
     cor: "from-emerald-500 to-green-500",
     bgColor: "bg-emerald-50 dark:bg-emerald-900/20",
@@ -25,9 +25,9 @@ export const servicosData = [
     id: "saude",
     titulo: "Acolhimento em Saúde",
     descricao:
-      "Rede de profissionais de saúde informados sobre cannabis medicinal. Acesso a tratamento humanizado e redução de danos.",
+      "Rede de profissionais de saúde informados sobre maconha medicinal. Acesso a tratamento humanizado e redução de danos.",
     descricaoLonga:
-      "Conectamos pacientes com médicos, psicólogos e outros profissionais de saúde que trabalham com uma abordagem antiproibicionista. Oferecemos suporte para acesso à cannabis medicinal, redução de danos e cuidado integral.",
+      "Conectamos pacientes com médicos, psicólogos e outros profissionais de saúde que trabalham com uma abordagem antiproibicionista. Oferecemos suporte para acesso à maconha medicinal, redução de danos e cuidado integral.",
     icon: "❤️",
     cor: "from-emerald-500 to-green-500",
     bgColor: "bg-emerald-50 dark:bg-emerald-900/20",
@@ -36,7 +36,7 @@ export const servicosData = [
       "Acompanhamento psicológico",
       "Orientação sobre redução de danos",
       "Suporte para acesso via SUS",
-      "Informação científica sobre cannabis medicinal",
+      "Informação científica sobre maconha medicinal",
     ],
     formularioLink: "https://forms.gle/saude-mmbh",
     whatsappLink:
@@ -133,7 +133,7 @@ export const depoimentosData = [
     idade: 42,
     servico: "Saúde",
     texto:
-      "Minha filha tem epilepsia refratária. Graças à rede de acolhimento, encontrei um médico que prescreveu cannabis medicinal. Hoje ela tem uma qualidade de vida que nunca imaginei possível.",
+      "Minha filha tem epilepsia refratária. Graças à rede de acolhimento, encontrei um médico que prescreveu maconha medicinal. Hoje ela tem uma qualidade de vida que nunca imaginei possível.",
     data: "Julho 2023",
   },
   {

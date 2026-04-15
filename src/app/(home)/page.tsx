@@ -6,12 +6,8 @@ import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 import {
   AcoesRapidas,
-  Acolhimento,
-  BlogSection,
   CartaPrincipios,
-  Documentos,
   Hero,
-  InstagramSection,
   SobreNos,
 } from "./sections";
 
@@ -28,11 +24,7 @@ export default function Home() {
         "sobre",
         "participe",
         "principios",
-        "acolhimento",
-        "documentos",
-        "blog",
         "loja",
-        "social",
       ];
 
       const current = sections.find((section) => {
@@ -111,12 +103,8 @@ export default function Home() {
             {[
               { id: "sobre", label: "Sobre" },
               { id: "principios", label: "Princípios" },
-              { id: "acolhimento", label: "Acolhimento" },
-              { id: "documentos", label: "Documentos" },
               { id: "participe", label: "Participe" },
-              { id: "blog", label: "Blog" },
               // { id: "loja", label: "Loja" },
-              { id: "social", label: "Social" },
             ].map((section) => (
               <button
                 key={section.id}
@@ -180,44 +168,14 @@ export default function Home() {
           <CartaPrincipios />
         </motion.section>
 
-        {/* Acolhimento */}
-        <motion.section
-          id="acolhimento"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.3 }}
-          className="container mx-auto px-4"
-        >
-          <Acolhimento />
-        </motion.section>
-
-        {/* Documentos */}
-        <motion.section
-          id="documentos"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.4 }}
-          className="container mx-auto px-4"
-        >
-          <Documentos />
-        </motion.section>
-
         {/* Ações Rápidas */}
         <motion.section
           id="participe"
           {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.5 }}
+          transition={{ ...sectionAnimation.transition, delay: 0.3 }}
           className="container mx-auto px-4"
         >
           <AcoesRapidas />
-        </motion.section>
-
-        {/* Blog */}
-        <motion.section
-          id="blog"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.5 }}
-          className="container mx-auto px-4"
-        >
-          <BlogSection />
         </motion.section>
 
         {/* Loja */}
@@ -230,15 +188,6 @@ export default function Home() {
           <Loja />
         </motion.section> */}
 
-        {/* Social */}
-        <motion.section
-          id="social"
-          {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.7 }}
-          className="container mx-auto px-4"
-        >
-          <InstagramSection />
-        </motion.section>
       </div>
 
       {/* Call to Action final */}

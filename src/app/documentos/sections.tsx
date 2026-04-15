@@ -141,7 +141,7 @@ export function DestaqueDocumento() {
     id: "manifesto-2024",
     titulo: "Manifesto 2024: Bolando o Futuro",
     descricao:
-      "Documento político da Marcha da Maconha BH para 2024. Apresenta nossa análise de conjuntura e propostas para a regulamentação democrática da cannabis. Inclui dados sobre impactos do proibicionismo em MG e caminhos para reparação histórica.",
+      "Documento político da Marcha da Maconha BH para 2024. Apresenta nossa análise de conjuntura e propostas para a regulamentação democrática da maconha. Inclui dados sobre impactos do proibicionismo em MG e caminhos para reparação histórica.",
     categoria: "manifestos",
     data: "Maio 2024",
     paginas: 12,

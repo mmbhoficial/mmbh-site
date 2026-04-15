@@ -115,7 +115,7 @@ export function HeroAcolhimento() {
           className="mx-auto mb-10 max-w-2xl px-10 text-base leading-relaxed font-light text-zinc-300 md:text-xl"
         >
           Se você sofreu violência policial, enfrenta processos por cultivo ou
-          busca tratamento com cannabis, nossa rede de acolhimento oferece
+          busca tratamento com maconha, nossa rede de acolhimento oferece
           suporte ético, humanizado e antiproibicionista.
         </motion.p>
 

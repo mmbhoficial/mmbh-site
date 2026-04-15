@@ -84,7 +84,7 @@ export function BlogHeader() {
           className="mx-auto mb-10 max-w-2xl text-center text-base leading-relaxed font-light text-zinc-300 md:text-xl"
         >
           Notícias, análises e relatos sobre a luta antiproibicionista e a
-          regulamentação da cannabis em Belo Horizonte. Educação científica,
+          regulamentação da maconha em Belo Horizonte. Educação científica,
           jurídica e social para desconstruir o proibicionismo.
         </motion.p>
 

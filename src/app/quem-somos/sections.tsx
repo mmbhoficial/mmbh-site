@@ -420,7 +420,7 @@ export function NossaMissao() {
           </h2>
 
           <p className="mb-12 text-lg leading-relaxed text-zinc-300">
-            Trabalhamos por um mundo onde a cannabis não seja mais pretexto para
+            Trabalhamos por um mundo onde a maconha não seja mais pretexto para
             encarceramento em massa, mas sim ferramenta de reparação histórica,
             cuidado em saúde e justiça social. Acreditamos na regulamentação
             democrática que coloca as comunidades afetadas pela guerra às drogas
@@ -445,7 +445,7 @@ export function NossaMissao() {
               </div>
               <h4 className="mb-3 text-xl font-bold text-white">Saúde</h4>
               <p className="text-sm text-emerald-200">
-                Acesso gratuito à cannabis medicinal. Redução de danos como
+                Acesso gratuito à maconha medicinal. Redução de danos como
                 política pública.
               </p>
             </div>
