@@ -72,40 +72,22 @@ export function Navbar() {
             ))}
           </div> */}
 
-          {/* Desktop CTA Buttons */}
-          {/* <div className="hidden items-center gap-3 md:flex">
-            <Button
-              asChild
-              variant="ghost"
-              size="icon"
+          {/* Desktop Navigation Links & CTA */}
+          <div className="flex items-center gap-6 md:flex">
+            {/* Loja Link */}
+            <Link
+              href="/loja"
               className={cn(
-                "rounded-full transition-colors",
-                !isNavActive
-                  ? "text-white hover:bg-white/10"
-                  : "text-zinc-700 hover:text-emerald-600",
+                "text-sm font-bold tracking-wider transition-colors",
+                isNavActive
+                  ? "text-zinc-700 hover:text-emerald-600"
+                  : "text-white hover:text-emerald-300",
               )}
             >
-              <Link
-                href="https://instagram.com/marchadamaconhabh"
-                target="_blank"
-              >
-                <Instagram size={20} />
-              </Link>
-            </Button>
+              Loja
+            </Link>
 
-            <Button
-              asChild
-              className="group relative overflow-hidden rounded-full bg-linear-to-r from-emerald-600 to-green-600 px-6 font-bold tracking-wider text-white shadow-lg shadow-emerald-600/30 transition-all hover:scale-105 hover:shadow-emerald-600/50"
-            >
-              <Link
-                href="https://docs.google.com/forms/d/1R4lbFTpLb0erUYakmFHGSbud9Qc0IeQuBkHshZtTALs"
-                target="_blank"
-              >
-                <Sparkles className="mr-2 h-4 w-4" />
-                Participar
-              </Link>
-            </Button>
-          </div> */}
+          </div>
 
         </div>
       </div>
