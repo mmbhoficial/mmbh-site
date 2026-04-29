@@ -169,6 +169,9 @@ export function Footer() {
               Termos e Condições
             </Link>
           </div>
+          <div className="flex w-1/3 items-end justify-end text-[10px] text-zinc-600">
+            <p>Desenvolvido com ❤️</p>
+          </div>
         </div>
 
         {/* Nota Final */}

@@ -172,7 +172,7 @@ export default function Home() {
         <motion.section
           id="participe"
           {...sectionAnimation}
-          transition={{ ...sectionAnimation.transition, delay: 0.3 }}
+          transition={{ ...sectionAnimation.transition, delay: 0.4 }}
           className="container mx-auto px-4"
         >
           <AcoesRapidas />
