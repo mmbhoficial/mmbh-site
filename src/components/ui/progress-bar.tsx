@@ -9,6 +9,10 @@ export function ProgressBar() {
 
   useEffect(() => {
     setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return;
 
     let scrollAnimationFrame: number | null = null;
 
@@ -31,8 +35,6 @@ export function ProgressBar() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-
-    // Inicializar
     updateProgressBar();
 
     return () => {
@@ -41,7 +43,7 @@ export function ProgressBar() {
       }
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isClient]);
 
   // Não renderizar nada durante SSR para evitar hydration mismatch
   if (!isClient) {

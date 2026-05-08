@@ -1,7 +1,7 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator";
-import { FileText, Instagram, MapPin, Users } from "lucide-react";
+import { FileText, Instagram, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
@@ -43,7 +43,7 @@ export function Footer() {
                 <Instagram size={18} />
               </Link>
               <Link
-                href="https://docs.google.com/forms/d/1R4lbFTpLb0erUYakmFHGSbud9Qc0IeQuBkHshZtTALs"
+                href=""
                 target="_blank"
                 className="rounded-full bg-zinc-800/50 p-3 transition-all hover:bg-emerald-500/20 hover:text-emerald-400"
               >
@@ -89,12 +89,12 @@ export function Footer() {
               {[
                 {
                   name: "Grupo de WhatsApp",
-                  href: "https://docs.google.com/forms/d/1R4lbFTpLb0erUYakmFHGSbud9Qc0IeQuBkHshZtTALs",
+                  href: "",
                   icon: "💬",
                 },
                 {
                   name: "Formulário Acolhimento",
-                  href: "https://docs.google.com/forms/e/1FAIpQLScgXrcp9De-vbgagN1FxKvlUZe3HbQZv8EnWual2sfrcCC3kg",
+                  href: "",
                   icon: "🤝",
                 },
                 {
