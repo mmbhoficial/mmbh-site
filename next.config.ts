@@ -14,11 +14,11 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)",
+        source: "/:path*",
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=0, must-revalidate",
+            value: "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
           },
           {
             key: "Pragma",
@@ -26,16 +26,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Expires",
-            value: "0",
-          },
-        ],
-      },
-      {
-        source: "/api/:path*",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "no-store, must-revalidate",
+            value: "-1",
           },
         ],
       },
